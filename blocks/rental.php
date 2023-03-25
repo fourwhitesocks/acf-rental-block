@@ -20,12 +20,21 @@ $wrapper_attributes = get_block_wrapper_attributes(
 );
 ?>
 
-then all ACF + HTML template code should be wrapped in this div
 
+
+
+<!-- you can do this instead of writing echo -->
 <div <?= $wrapper_attributes ?>>
 
+	<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($classes); ?>">
+		<p class="fun"><?php the_field('title'); ?></p>
+		</br>
+		<p class="yellow text-transform"><?php the_field('description'); ?></p>
 
-
-	<?php the_field('title'); ?>
+		</br>
+		<?php the_field('price'); ?>
+		</br>
+		<?php the_field('extras'); ?>
+	</div>
 
 </div>

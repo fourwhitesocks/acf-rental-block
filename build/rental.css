@@ -13,4 +13,17 @@
   padding: 2px;
 }
 
+.fun {
+  font-weight: bold;
+}
+
+.yellow {
+  color: yellow;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.yellow.text-transform {
+  text-transform: uppercase;
+}
+
 /*# sourceMappingURL=rental.css.map*/
