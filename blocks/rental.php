@@ -21,8 +21,6 @@ $wrapper_attributes = get_block_wrapper_attributes(
 ?>
 
 
-
-
 <!-- you can do this instead of writing echo -->
 <div <?= $wrapper_attributes ?>>
 
